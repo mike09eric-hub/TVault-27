@@ -42,3 +42,4 @@ function restore(e){let file=e.target.files[0];if(!file)return;let r=new FileRea
 $('#profile').value=profile;$('#profile').onchange=e=>{profile=e.target.value;localStorage.setItem(PROFILE,profile);render()};$('#exportTop').onclick=backup;$('#close').onclick=()=>$('#modal').classList.remove('show');$('#modal').onclick=e=>{if(e.target.id==='modal')$('#modal').classList.remove('show')};document.querySelectorAll('[data-page]').forEach(b=>b.onclick=()=>go(b.dataset.page));render();
 </script><!-- TVault 27 Android build refresh -->
 </body></html>
+<!-- Trigger GitHub Pages preview deployment -->
